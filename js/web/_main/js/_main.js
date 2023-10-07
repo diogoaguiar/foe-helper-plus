@@ -772,6 +772,18 @@ GetFights = () =>{
 		MainParser.OpenConversation = null;
 	});
 
+	// Foreward events
+	FoEproxy.addHandler('all', 'all', (data, postData) => {
+		MainParser.sendExtMessage({
+			type: 'send2Api',
+			url: 'http://localhost:1323/event',
+			data: JSON.stringify({
+				data: data,
+				postData: postData
+			})
+		});
+	});
+
 })();
 
 let HelperBeta = {
