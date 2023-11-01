@@ -772,17 +772,26 @@ GetFights = () =>{
 		MainParser.OpenConversation = null;
 	});
 
-	// Foreward events
+	// Foreward request events
 	FoEproxy.addHandler('all', 'all', (data, postData) => {
 		MainParser.sendExtMessage({
 			type: 'send2Api',
-			url: 'http://localhost:1323/event',
+			url: `http://localhost:1323/${ExtPlayerID}/event`,
 			data: JSON.stringify({
 				data: data,
 				postData: postData
 			})
 		});
 	});
+
+	// Foreward websocket events
+	// FoEproxy.addWsHandler('all', 'all', (data) => {
+	// 	MainParser.sendExtMessage({
+	// 		type: 'send2Api',
+	// 		url: `http://localhost:1323/${ExtPlayerID}/event`,
+	// 		data: JSON.stringify(data)
+	// 	});
+	// });
 
 })();
 
