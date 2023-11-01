@@ -1,5 +1,21 @@
 ## Changelog - Extension
 
+##### 3.3.0.0
+**New**
+- Card Game (Halloween Event):
+	- provides a table of the remaining cards
+	- warns, when continuing would be the end of the round
+
+---
+##### 3.2.9.0
+**Update**
+- Sets/Kits:
+	- added buildings until Halloween 2023
+	
+- General:
+	- when a limited building expires, an Alert is triggert
+
+---
 ##### 3.2.8.0
 **Update**
 - Productions (cutesy of bencptest/apophis):
