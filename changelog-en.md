@@ -1,8 +1,130 @@
 ## Changelog - Extension
 
+
+##### 3.6.2.0
+
+**Update**
+- Mergergame:
+	- adapted to event changes
+
+- Kits/Sets Module:
+	- now shows the amount of items needed for a full building
+
+**BugFix**
+- Settlements:
+	- fix 4x chance for first run
+
+- Statistics:
+	- improved datepicker (thanks Linnum!)
+
+---
+
+##### 3.6.1.1
+
+**BugFix**
+- FP Bar:
+	- The animation of the full FP bar lead to issues for many users, we removed it
+
+---
+
+##### 3.6.1.0
+
+**Update**
+- FP-Bar:
+	- new design
+
+- Kits/Sets:
+	- new design
+	- League rewards are now listed
+	- added new buildings (up to Anniversary 2024)
+
+- Mergergame (Anniversary-Event):
+	- prepared for Changes
+	- removed simulation and expected rewards
+
+- Blue Galaxy:
+	- sorting is now saved
+	- sorting may be switched between combined value and individual values (FP/Goods/Guild-Goods/Fragments)
+
+- Efficiency:
+	- Values 0 and below are now also shown
+
+- Gild Member Overview
+	- Guild-goods production of certain buildings added
+
+- GB Calculator:
+	- New settings: deactivate BP and medals
+
+**BugFix**
+- GB Calculator:
+	- Settings are nor saved/evaluated properly
+
+---
+
+##### 3.5.0.2
+
+**BugFix**
+- Export-Function:
+	- Typo in code fixed
+
+---
+
+##### 3.5.0.1
+**Update**
+- City Map
+	- Better visibility for highlighted buildings 
+	- Added highlighting for buildings that do not require streets
+    - Added a global sorting layout
+
+**BugFix**
+- BG Helper:
+	- List did not always refresh
+
+---
+
+##### 3.5.0.0
+**New**
+- PvP Arena Protocol (Dank an dersiedler1)
+	- no need to click though protocol pages
+	- categorized protocol entries
+	- can be activated in the settings to pop-up when opening the Arena
+
+- Army Advisor
+	- was added some time ago, but never was mentioned in a changelog
+	- activate in the settings
+	- tracks the most recent battles
+	- gives a pop-up whenever a battle was unfavourable to the player (e.g. lost two or more units)
+	- player can set advice for specific opponent armies and bonuses that will then be shown in the army selection dialogue
+
+**Update**
+- Blue Galaxy:
+	- now always available
+	- included fragments and guildgoods in list
+	- reworked the building production evaluation (e.g. added Aegean Resort)
+
+- Popgame:
+	- adjusted layout for next Event
+
+- Building Efficiency:
+	- now lists GBs
+
+- GB Tracker:
+	- updated to accomodate changed serverdata
+
+- GB/Own Part Calculator:
+	- added player activity indicator
+
+**BugFix**
+- Moppelhelper:
+	- fix era sorting 
+
+- GBG
+	- some own provinces were not shown in the "locked" list
+
+---
 ##### 3.4.0.0
 **New**
-- GBG Buildings optmizer:
+- GBG Buildings optimizer:
 	- provides a list of suitable combinations of province buildings that have the least impact on treasury
 
 **Update**
@@ -15,10 +137,9 @@
 **BugFix**
 - GBG province list and map:
 	- code adapted to changed data structure received from server (thanks Arklur!)
-- General:
-	- randomly occurring problem with loading the local Database could lead to the helper not beeing fully functional - this should no longer happen
 
 ---
+
 ##### 3.3.0.0
 **New**
 - Card Game (Halloween Event):
@@ -26,6 +147,7 @@
 	- warns, when continuing would be the end of the round
 
 ---
+
 ##### 3.2.9.0
 **Update**
 - Sets/Kits:
@@ -35,6 +157,7 @@
 	- when a limited building expires, an Alert is triggert
 
 ---
+
 ##### 3.2.8.0
 **Update**
 - Productions (cutesy of bencptest/apophis):
@@ -49,7 +172,9 @@
 **BugFix**
 - Idle Game:
 	- it was possible that times like "1h:60min" were given - this is now corrected
+
 ---
+
 ##### 3.2.7.0
 **Update**
 - Recurring Quests
@@ -57,7 +182,9 @@
 
 **BugFix**
 - Fixed small bugs (mainly Titan related)
+
 ---
+
 ##### 3.2.6.0
 
 **Update**
@@ -78,6 +205,7 @@
 
 **BugFix**
 - Discord Invite links were broken, so we replaced them
+- 
 ---
 ##### 3.2.5.0
 
@@ -204,7 +332,9 @@
 **BugFix**
 - Quest counter:
 	- [#2541](https://github.com/mainIine/foe-helfer-extension/issues/2541) if multiple recurring quests were abondoned in quick succession, only one was counted
+
 ---
+
 ##### 3.2.1.0
 
 **Update**
@@ -215,6 +345,7 @@
 	- added Anniversary-Event
 	
 ---
+
 ##### 3.2.0.0
 
 **New**
